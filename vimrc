@@ -1,5 +1,7 @@
 call pathogen#infect()
 
+"Use vim, not vi defaults
+set nocompatible
 "Show line numbers
 set number
 "Show line and column numbers
