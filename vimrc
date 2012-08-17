@@ -1,5 +1,8 @@
 call pathogen#infect()
 
+"Show line numbers
+:set number
+
 syntax on
 filetype plugin indent on
 
