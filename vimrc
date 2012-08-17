@@ -46,3 +46,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 if has("gui_macvim") && has("gui_running")
   map <D-/> <plug>NERDCommenterComment
 endif
+
+" Treat JSON files like JavaScript
+au BufNewFile,BufRead *.json set ft=javascript
