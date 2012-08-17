@@ -6,6 +6,8 @@ call pathogen#infect()
 syntax on
 filetype plugin indent on
 
+"Make NERDTree toggle window with leader n
+map <leader>n :NERDTreeToggle<CR>
 "Make NERDTree auto open on vim opening
 autocmd vimenter * NERDTree
 "Make NERDTree auto close when it is the only window open
