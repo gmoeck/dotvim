@@ -7,7 +7,7 @@ set number
 "Show line and column numbers
 set ruler
 "Set default encoding to UTF8
-set encoding=utf-8 
+set encoding=utf-8
 "Turn on syntax highlighting allowing local overrides
 syntax enable
 "Don't wrap lines
