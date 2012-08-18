@@ -8,8 +8,6 @@ set number
 set ruler
 "Set default encoding to UTF8
 set encoding=utf-8
-"Turn on syntax highlighting allowing local overrides
-syntax enable
 "Don't wrap lines
 set nowrap
 "Make tabs two spaces
@@ -20,6 +18,23 @@ set shiftwidth=2
 set expandtab
 "Show invisible characters
 set list
+"Show lines matching brackets/parens
+set showmatch
+
+"Colors
+set background=dark
+let g:solarized_termcolors= 256
+let g:solarized_termtrans = 1
+let g:solarized_degrade = 1
+let g:solarized_bold = 1
+let g:solarized_underline = 1
+let g:solarized_italic = 1
+let g:solarized_contrast = "high"
+let g:solarized_visibility= "high"
+colorscheme solarized
+
+"Turn on syntax highlighting allowing local overrides
+syntax enable
 
 " List chars
 set listchars=""                  " Reset the listchars
@@ -47,6 +62,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 "Setup macvim to use command / to comment out the line
 if has("gui_macvim") && has("gui_running")
   map <D-/> <plug>NERDCommenterComment
+endif
+
+"Remove gui toolbar
+if has('gui_running')
+  set guioptions-=T
 endif
 
 " Treat JSON files like JavaScript
