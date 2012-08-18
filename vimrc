@@ -20,6 +20,8 @@ set expandtab
 set list
 "Show lines matching brackets/parens
 set showmatch
+"Show color column at 80 characters
+set colorcolumn=80
 
 "Colors
 set background=dark
