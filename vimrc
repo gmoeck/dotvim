@@ -26,6 +26,8 @@ if exists('+colorcolumn')
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+"Auto indent files
+filetype indent on
 
 "Colors
 set background=dark
