@@ -21,7 +21,11 @@ set list
 "Show lines matching brackets/parens
 set showmatch
 "Show color column at 80 characters
-set colorcolumn=80
+if exists('+colorcolumn')
+  set colorcolumn=80
+else
+  au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+endif
 
 "Colors
 set background=dark
