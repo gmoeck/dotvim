@@ -69,7 +69,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 "Setup macvim to use command / to comment out the line
 if has("gui_macvim") && has("gui_running")
-  map <D-/> <plug>NERDCommenterComment
+  map <D-/> <plug>NERDCommenterToggle<CR>
+  imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 endif
 
 "Remove gui toolbar
