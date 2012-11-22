@@ -60,6 +60,9 @@ set smartcase   " ... unless they contain at least one capital letter
 " Disable temp and backup files
 set wildignore+=*.swp,*~,._*
 
+"Setup searching files to leader s
+map <leader>s :CtrlP<CR>
+
 "Make NERDTree toggle window with leader n
 map <leader>n :NERDTreeToggle<CR>
 "Make NERDTree auto open on vim opening
