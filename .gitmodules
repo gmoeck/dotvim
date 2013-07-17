@@ -31,3 +31,6 @@
 [submodule "bundle/erlang"]
 	path = bundle/erlang
 	url = https://github.com/jimenezrick/vimerl.git
+[submodule "bundle/vim-elixir"]
+	path = bundle/vim-elixir
+	url = https://github.com/elixir-lang/vim-elixir
